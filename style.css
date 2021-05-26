@@ -1,0 +1,104 @@
+body{
+    display: flex;
+    background-color: #262b2d;
+}
+
+.game-container{
+    width: 500px;
+    height: 730px;
+    position: absolute;
+    left: 80px;
+}
+
+.border-left{
+    width: 80px;
+    height: 790px;
+    position: absolute;
+    background-color: #262b2d;
+    z-index: 3;
+
+}
+
+.border-right{
+    width: 80px;
+    height: 790px;
+    position: absolute;
+    background-color: #262b2d;
+    z-index: 2;
+    left: 580px;
+}
+
+.border-top{
+    width: 500px;
+    height: 110px;
+    position: absolute;
+    background-color: #262b2d;
+    z-index: 2;
+    top: -30px;
+    border-bottom: 5px solid #3a3e4c;
+}
+
+.sky{
+    background-image: url(./media/sky.png);
+    
+    background-position: center;
+    background-size: cover;
+    width: 500px;
+    height: 580px;
+    position: absolute;
+
+}
+
+.ground{
+    background-image: url(./media/flappy_ground4.png);
+    width: 500px;
+    height: 150px;
+    position: absolute;
+    top: 580px;
+    z-index: 2;
+    
+}
+
+.bird{
+    background-image: url(./media/mosquito.png);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    height: 45px;
+    width: 60px;
+}
+
+.obstacle{
+    background-image: url(./media/Fly_catcher.png);
+    width: 60px;
+    height: 280px;
+    position: absolute;
+    filter: grayscale(20%);
+}
+
+.topObstacle{
+    background-image: url(./media/Fly_catcher.png);
+    transform: rotate(180deg) rotateY(180deg);
+    width: 60px;
+    height: 280px;
+    position: absolute;
+    filter: grayscale(20%);
+}
+
+.box{
+    background-color: whitesmoke;
+    width: 180px;
+    height: 70px;
+    position: absolute;
+    top: 50px;
+    left: 160px;
+    border: 3px solid #262b2d;
+}
+
+.box-text{
+    text-align: center;
+    margin-top: 24px;
+    font-size: 24px;
+    font-family: 'Titan One', cursive;
+    color: #262b2d;
+}
